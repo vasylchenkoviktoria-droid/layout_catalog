@@ -7,7 +7,7 @@
   background-color: #fff;
   border-radius: 5px;
   border: 1px solid #f3f3f3;
-  transition: color $smooth-hover;
+  transition: transform $smooth-hover, color $smooth-hover;
 
   &__image {
     height: auto;
@@ -27,6 +27,7 @@
     color: $color-blue;
     margin-bottom: 4px;
     margin-top: 0;
+    transition: color $smooth-hover;
   }
 
   &__code {
