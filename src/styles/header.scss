@@ -33,10 +33,12 @@
   height: 60px;
   display: flex;
   align-items: center;
-  transition: transform $smooth-hover;
+  transition:
+    color $smooth-hover,
+    transform $smooth-hover;
 }
 
-.logo {
+.header__logo {
   display: flex;
   margin: 10px auto 10px 50px;
 }

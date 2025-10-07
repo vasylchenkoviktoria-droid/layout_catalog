@@ -2,14 +2,14 @@
   display: flex;
   place-content: center;
   flex-direction: row;
-  gap: 4px;
+  gap: $stars-gap;
   margin: 0;
 
   &__star {
     background-image: url('../images/star.svg');
     background-repeat: no-repeat;
-    height: 16px;
-    width: 16px;
+    height: $stars-size;
+    width: $stars-size;
   }
 
   &__star:nth-child(-n + 4) {

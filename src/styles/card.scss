@@ -2,12 +2,12 @@
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  width: 200px;
+  width: $card-width;
   height: 406px;
   background-color: #fff;
   border-radius: 5px;
   border: 1px solid #f3f3f3;
-  transition: transform $smooth-hover;
+  transition: color $smooth-hover;
 
   &__image {
     height: auto;
@@ -20,7 +20,7 @@
     padding: 0 16px;
   }
 
-  &__name {
+  &__title {
     font-size: 12px;
     font-weight: 500;
     line-height: 18px;
@@ -59,7 +59,7 @@
     line-height: 18px;
   }
 
-  &__title {
+  &__pricename {
     margin: 0;
   }
 
@@ -78,7 +78,10 @@
     font-size: 14px;
     line-height: 16px;
     font-weight: 700;
-    transition: transform $smooth-hover;
+    transition:
+      background-color $smooth-hover,
+      color $smooth-hover,
+      transform $smooth-hover;
   }
 
   &__button:hover {
@@ -112,6 +115,6 @@
   }
 }
 
-.card:hover .card__name {
-  color: #34568b;
+.card:hover .card__title {
+  color: $color-title-hover;
 }
